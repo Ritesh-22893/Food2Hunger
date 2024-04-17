@@ -25,6 +25,16 @@ function Navbar() {
             </>
           );
         })}
+    <div className='flex justify-between bg-black/80 px-10 py-3 items-center'>
+      <div className='text-3xl drop-shadow-md font-bold text-white'>Food2Hunger</div>
+      <div className='text-white flex gap-10'>
+        {
+          NavData.map((val,i)=>{
+            return<div key={i}>
+              <Link to={val.path} >{val.title}</Link>
+              </div>
+          })
+        }
       </div>
       <div className="flex gap-3 items-center">
         <button className='bg-[#F74B1B] text-white px-7 py-1 rounded-full' onClick={

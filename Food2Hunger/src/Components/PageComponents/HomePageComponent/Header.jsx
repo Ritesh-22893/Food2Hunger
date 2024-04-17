@@ -15,7 +15,7 @@ function Header() {
         </div>
       </div>
       <div>
-        <img src="./images/bg1.jpg" alt="backgorund" className='h-[600px] w-[600px] border-[20px] border-yellow-300 rounded-full mt-20' />
+        <img src="./images/bg1.jpg" alt="backgorund" className='h-[500px] w-[600px] border-[20px] border-yellow-300 rounded-full mt-20' />
       </div>
       
         <div className='flex flex-col items-center gap-5'>

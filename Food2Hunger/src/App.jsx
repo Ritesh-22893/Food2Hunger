@@ -6,13 +6,15 @@ import Blog from './Pages/Blog'
 import Marketplace from "./Pages/Marketplace"
 import ContactUs from './Pages/ContactUs'
 import NgoLoginForm from './Components/PageComponents/NgoLoginPage/Ngologinform'
+import Footer from './Components/Navigation/Footer'
 
 function App() {
   return (
     <>
+   
+
      <Router>
      <Navbar/>
-     {/* <Home/> */}
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
@@ -21,6 +23,7 @@ function App() {
         <Route path='/Ngologinform' element={<NgoLoginForm/>}></Route>
       </Routes>
      </Router>
+     <Footer/>
     </>
   )
 }

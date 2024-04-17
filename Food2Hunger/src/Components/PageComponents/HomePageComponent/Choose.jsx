@@ -6,7 +6,7 @@ function Choose() {
     <div className='mt-20'>
     <div className='text-center text-3xl font-bold mb-10'>Why Choose Us</div>
 
-      <div className='flex gap-10 px-10 '>
+      <div className='flex gap-20 px-10 '>
         {
             ChooseSection.map((val,i)=>{
                 return(
