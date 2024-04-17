@@ -13,7 +13,7 @@ export class Marketplace{
     @Column()
     title:string
 
-    @Column()
+    @Column({nullable:true})
     price:string
 
     @Column()

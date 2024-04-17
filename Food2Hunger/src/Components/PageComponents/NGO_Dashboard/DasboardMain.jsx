@@ -1,24 +1,39 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
 
 function DasboardMain() {
-  return (
+  const [data, setData]=useState([])
+  const getData=()=>{
+    try {
+        axios.get('http//:localhost:3000/Donation').then(res=>{
+
+            console.log(res);
+            setData(...res.data.data)
+        }).catch(error=>{
+            console.log(error);
+        })
+    } catch (error) {
+        console.log(error);
+    }
+  }
+    return (
       <div className='w-full '>
         <div className='grid grid-cols-3 gap-10'>
-                <div className='  bg-blue-300 p-10  shadow-2xl rounded-3xl border-2-black'>
+                <div className='  bg-blue-300 p-5 shadow-2xl rounded-3xl border-2-black'>
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
                         <div className='font-bold mt-3'>Request completed </div>
                         <div>200</div>
                     </div>
                 </div>
-                <div className='  bg-green-300 p-10 shadow-xl rounded-3xl border-2 ' >
+                <div className='  bg-green-300 p-5 shadow-xl rounded-3xl border-2 ' >
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
                         <div className='font-bold mt-3 capitalize'>pending required </div>
                         <div>200</div>
                     </div>
                 </div>
-                <div className='bg-purple-300 p-10 shadow-xl rounded-3xl border-2 ' >
+                <div className='bg-purple-300 p-5 shadow-xl rounded-3xl border-2 ' >
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
                         <div className='font-bold mt-3 capitalize'>delivery completed </div>

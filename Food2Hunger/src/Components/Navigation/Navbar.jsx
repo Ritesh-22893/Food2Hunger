@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { NavData } from "./NavData";
 import { Link, useNavigate } from "react-router-dom";
 import NgoLoginForm from "../PageComponents/NgoLoginPage/Ngologinform";
-import Dashboard from "../PageComponents/NGO_Dashboard/Dashboard";
 
 function Navbar() {
   const navigate = useNavigate();
