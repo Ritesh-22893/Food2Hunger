@@ -100,6 +100,8 @@ function MarketDashboard() {
                 <div><img src={image} alt="bg" className='w-full h-20' /></div>
                 <div className='font-bold text-xl '>{val.title}</div>
                 <div className='text-center'>{val.description}</div>
+                <div className='text-center'>{val.price}</div>
+
              </div>
                         </>
                     )

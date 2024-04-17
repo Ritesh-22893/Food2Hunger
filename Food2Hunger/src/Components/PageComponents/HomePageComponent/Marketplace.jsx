@@ -17,13 +17,14 @@ function Marketplace() {
     useEffect(() => {
       getData()
     }, []);
+    
   return (
     
     <div>
     <div className='mt-20'>
  <div className='text-center text-3xl font-bold mb-10'>Market Place</div>
 
-   <div className='flex gap-10 px-10 '>
+   <div className='grid grid-cols-3 w-10/12 mx-auto gap-10 '>
      {
          data.map((val,i)=>{
           let image = `http://localhost:3000/public/${val.image}`

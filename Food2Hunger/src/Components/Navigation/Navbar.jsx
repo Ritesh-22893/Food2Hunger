@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavData } from "./NavData";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import NgoLoginForm from "../PageComponents/NgoLoginPage/Ngologinform";
 
 function Navbar() {
@@ -18,6 +18,7 @@ function Navbar() {
    }
   }, [localStorage]);
   return (
+     <>
       <div className="flex justify-between bg-black/80 px-10 py-3 items-center">
         <div className="text-3xl drop-shadow-md font-bold text-white">
           Food2Hunger
@@ -49,6 +50,8 @@ function Navbar() {
           </button>
         </div>
       </div>
+      <Outlet/>
+     </>
     // </div>
   );
 }
