@@ -23,7 +23,7 @@ function App() {
         <Route path='/Ngologinform' element={<NgoLoginForm/>}></Route>
       </Routes>
      </Router>
-     <Footer/>
+     {/* <Footer/> */}
     </>
   )
 }
