@@ -5,12 +5,14 @@ import Home from './Pages/Home'
 import Blog from './Pages/Blog'
 import Marketplace from "./Pages/Marketplace"
 import ContactUs from './Pages/ContactUs'
+import Footer from './Components/Navigation/Footer'
 
 function App() {
   return (
     <>
      <Router>
      <Navbar/>
+ 
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
@@ -18,6 +20,7 @@ function App() {
         <Route path='/Contactus' element={<ContactUs/>}></Route>
       </Routes>
      </Router>
+     <Footer/>
     </>
   )
 }
