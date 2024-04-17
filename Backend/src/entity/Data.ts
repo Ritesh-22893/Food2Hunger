@@ -1,16 +1,28 @@
 
-import { Column, Entity } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 
 export class Data{
 
-    @Column()
-    image:string
+    @PrimaryGeneratedColumn()
+    id:string
 
     @Column()
-    title:string
+    organizationname:string
 
     @Column()
-    description:string
+    address:string
+
+    @Column()
+    phone:string
+
+    @Column()
+    email:string
+
+    @Column()
+    password:string
+
+    @Column()
+    file:string
 }

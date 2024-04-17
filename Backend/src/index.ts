@@ -6,6 +6,7 @@ import { Routes } from "./routes"
 import { User } from "./entity/User"
 import * as morgan from "morgan"
 import * as cors from "cors"
+import BlogRoutes from './Routes/Blog.Routes';
 
 
 AppDataSource.initialize().then(async () => {
@@ -23,6 +24,7 @@ AppDataSource.initialize().then(async () => {
 
     // setup express app here
     // ...
+    app.use(BlogRoutes)
 
     // start express server
     app.listen(3000)

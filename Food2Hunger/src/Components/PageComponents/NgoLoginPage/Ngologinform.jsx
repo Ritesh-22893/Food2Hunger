@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import Footer from "../../Navigation/Footer";
 
 const LoginFormSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("can't be empty"),

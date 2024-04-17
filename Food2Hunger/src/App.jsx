@@ -7,6 +7,7 @@ import Marketplace from "./Pages/Marketplace"
 import ContactUs from './Pages/ContactUs'
 import NgoLoginForm from './Components/PageComponents/NgoLoginPage/Ngologinform'
 import Footer from './Components/Navigation/Footer'
+import RegisterForms from './Components/PageComponents/Registerpage/RegisterFroms'
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
         <Route path='/Marketplace' element={<Marketplace/>}></Route>
         <Route path='/Contactus' element={<ContactUs/>}></Route>
         <Route path='/Ngologinform' element={<NgoLoginForm/>}></Route>
+        <Route path='/Registerform' element={<RegisterForms/>}></Route>
+
       </Routes>
      </Router>
-     <Footer/>
     </>
   )
 }

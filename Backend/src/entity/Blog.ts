@@ -1,10 +1,13 @@
-import { Column, Entity } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 
 export class Blog{
 
-    @Column()
+    @PrimaryGeneratedColumn()
+    id:number;
+
+    @Column({nullable:true})
     image:string
 
     @Column()
@@ -12,4 +15,5 @@ export class Blog{
 
     @Column()
     description:string
+
 }
