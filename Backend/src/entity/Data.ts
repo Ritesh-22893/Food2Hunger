@@ -11,7 +11,7 @@ export class Data{
     @Column()
     organizationname:string
 
-    @Column()
+    @Column({nullable:true})
     address:string
 
     @Column()
@@ -23,6 +23,6 @@ export class Data{
     @Column()
     password:string
 
-    @Column()
-    file:string
+    @Column({nullable:true})
+    document:string
 }
