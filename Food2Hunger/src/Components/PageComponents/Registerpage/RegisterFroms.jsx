@@ -10,7 +10,7 @@ function RegisterForms() {
         phone: '',
         email: '',
         password: '',
-        confirm_password: '',
+        // confirm_password: '',
         document: ''
     };
 
@@ -20,10 +20,10 @@ function RegisterForms() {
         phone: Yup.string().required('Phone number is required'),
         email: Yup.string().email('Invalid email').required('Email is required'),
         password: Yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
-        confirm_password: Yup.string()
-            .oneOf([Yup.ref('password'), null], 'Passwords must match')
-            .required('Confirm password is required'),
-        document: Yup.mixed().required('Document is required')
+        // confirm_password: Yup.string()
+        //     .oneOf([Yup.ref('password'), null], 'Passwords must match')
+        //     .required('Confirm password is required'),
+        // document: Yup.mixed().required('Document is required')
     });
 
     return (
@@ -38,17 +38,27 @@ function RegisterForms() {
             onSubmit={(values)=>{
                     console.log(values);
                     try {
-                        axios.post('http://localhost:3000/Data',values).then(res=>{
+                        let data = new FormData();
+                        data.append("organizationname",values.organizationname)
+                        
+                        data.append("address",values.address)
+                        data.append("phone",values.phone)
+                        data.append("email",values.email)
+                        data.append("password",values.password)
+                        data.append("document",values.document)
+
+                        axios.post('http://localhost:3000/Data',data).then(res=>{
                             console.log(res);
                         }).catch(err=>{
                             console.log(err);
                         })
-                    } catch (error) {
+                    }
+                     catch (error) {
                         console.log(error);
                     }
             }}
             >
-                {({handleSubmit})=>{
+                {({handleSubmit, setFieldValue})=>{
                     return(
 
                         <Form onSubmit={handleSubmit} >
@@ -78,7 +88,7 @@ function RegisterForms() {
                             
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
-                                <Field type="password" name="password" placeholder="Enter password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                                <Field type="password"  name="password" placeholder="Enter password" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                                 <ErrorMessage name="password" component="div" className="text-red-500 text-xs italic" />
                             </div>
                             
@@ -90,7 +100,9 @@ function RegisterForms() {
                             
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2">Organization Document:</label>
-                                <Field type="file" name="document" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                                <input onChange={event=>{
+                                    setFieldValue('document', event.target.files[0])
+                                }} type="file" name="document" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                                 <ErrorMessage name="document" component="div" className="text-red-500 text-xs italic" />
                             </div>
                             

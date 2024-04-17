@@ -7,12 +7,11 @@ import { Data } from "./entity/Data"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    // host: "localhost",
-    // port: 5432,
-    // username: "postgres",
-    // password: "9843798452",
-    // database: "Hackathon",
-    url:"postgres://default:DBa1HSeqEk5T@ep-old-tree-a4f8wfqq-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require",
+    host: "localhost",
+    port: 5432,
+    username: "postgres",
+    password: "9843798452",
+    database: "Hackathon",
     synchronize: true,
     logging: false,
     entities: [User,Blog,Marketplace,Data],

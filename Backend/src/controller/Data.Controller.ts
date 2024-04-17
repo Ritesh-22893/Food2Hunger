@@ -40,6 +40,7 @@ export const getSingleData1=async(req:Request, res:Response, next:NextFunction)=
 export const postData1=async(req:Request, res:Response, next:NextFunction)=>{
     try {
         req.body.document=req.file.filename
+        console.log("Hrllo",req.body)
         await DataRepo.save(req.body).then(result=>{
             res.status(200).json({
                 message:"data post",
