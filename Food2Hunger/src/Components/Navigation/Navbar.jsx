@@ -9,11 +9,9 @@ function Navbar() {
       <div className='text-white flex gap-10'>
         {
           NavData.map((val,i)=>{
-            return(
-              <>
-              <Link to={val.path} key={i}>{val.title}</Link>
-              </>
-            );
+            return<div key={i}>
+              <Link to={val.path} >{val.title}</Link>
+              </div>
           })
         }
       </div>

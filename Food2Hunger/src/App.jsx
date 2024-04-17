@@ -11,7 +11,6 @@ function App() {
     <>
      <Router>
      <Navbar/>
-     <Home/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
