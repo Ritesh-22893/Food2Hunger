@@ -5,13 +5,16 @@ import Home from './Pages/Home'
 import Blog from './Pages/Blog'
 import Marketplace from "./Pages/Marketplace"
 import ContactUs from './Pages/ContactUs'
+import RegisterFroms from './Components/PageComponents/Registerpage/RegisterFroms'
 
 function App() {
   return (
     <>
+   
+
      <Router>
      <Navbar/>
-     <Home/>
+     {/* <Home/> */}
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Blog' element={<Blog/>}></Route>
