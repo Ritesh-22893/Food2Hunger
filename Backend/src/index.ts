@@ -7,6 +7,9 @@ import { User } from "./entity/User"
 import * as morgan from "morgan"
 import * as cors from "cors"
 import BlogRoutes from './Routes/Blog.Routes';
+import MarketRoutes from './Routes/Market.Routes';
+import DataRoutes from './Routes/Data.Routes';
+
 
 
 AppDataSource.initialize().then(async () => {
@@ -25,6 +28,8 @@ AppDataSource.initialize().then(async () => {
     // setup express app here
     // ...
     app.use(BlogRoutes)
+    app.use(MarketRoutes)
+    app.use(DataRoutes)
 
     // start express server
     app.listen(3000)
