@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MarketplaceData } from './MarketplaceData';
+import axios from 'axios';
+
 
 function Marketplace() {
+
   return (
+    
     <div>
     <div className='mt-20'>
  <div className='text-center text-3xl font-bold mb-10'>Market Place</div>

@@ -4,6 +4,7 @@ import Choose from '../Components/PageComponents/HomePageComponent/Choose';
 import Services from '../Components/PageComponents/HomePageComponent/Services';
 import Blogs from '../Components/PageComponents/HomePageComponent/Blogs';
 import Marketplace from '../Components/PageComponents/HomePageComponent/Marketplace';
+import Footer from '../Components/Navigation/Footer';
 
 function Home() {
   return (
@@ -13,6 +14,8 @@ function Home() {
       <Services/>
       <Blogs/>
       <Marketplace/>
+     <Footer/>
+
     </>
   );
 }

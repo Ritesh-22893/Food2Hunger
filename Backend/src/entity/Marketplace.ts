@@ -1,10 +1,13 @@
-import { Column, Entity } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 
 export class Marketplace{
 
-    @Column()
+    @PrimaryGeneratedColumn()
+    id:number;
+
+    @Column({nullable:true})
     image:string
 
     @Column()
