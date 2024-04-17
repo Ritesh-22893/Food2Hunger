@@ -10,6 +10,8 @@ import Footer from './Components/Navigation/Footer'
 function App() {
   return (
     <>
+   
+
      <Router>
      <Navbar/>
  
