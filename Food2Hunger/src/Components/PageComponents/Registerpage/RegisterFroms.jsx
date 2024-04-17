@@ -34,7 +34,7 @@ function RegisterForms() {
         <div className="flex-col justify-center items-center h-screen bg-white-100 pt-20 space-y-3">
                 <h1 className='font-bold text-3xl text-center mb-4'>WELCOME TO FOOD2HUNGER</h1>
                 <div className='flex-col  px-80'>
-            <div className="bg-white shadow-md rounded px-8 pt-6 pb-8  border-2 rounded-md ">
+            <div className="bg-white shadow-md px-8 pt-6 pb-8  border-2 rounded-md ">
                 <div className="text-center mb-4 font-bold text-2xl capitalize">Register your Account</div>
                 <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validationSchema}>
                     {({ isSubmitting }) => (
