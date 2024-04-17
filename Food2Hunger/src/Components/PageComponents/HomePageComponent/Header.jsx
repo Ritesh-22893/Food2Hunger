@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate=useNavigate()
+  const navigation=()=>{
+    navigate('/Donatepage')
+  }
   return (
     <div className='flex justify-around h-[600px] w-screen items-center px-10'>
       <div className='flex flex-col items-start gap-5'>
@@ -9,7 +14,9 @@ function Header() {
         <div className='flex flex-col gap-2'>
             <div className='font-bold'>Join with us to</div>
             <div className='flex gap-3'>
-                <button className='bg-[#F74B1B] text-white px-7 py-3'>Donate Food</button>
+                <button className='bg-[#F74B1B] text-white px-7 py-3' onClick={()=>{
+                  navigation()
+                }}>Donate Food</button>
                 <button className='bg-[#188E4F] text-white px-7 py-3'>Receive Food</button>
             </div>
         </div>

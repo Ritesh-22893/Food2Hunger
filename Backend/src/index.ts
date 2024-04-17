@@ -9,6 +9,7 @@ import * as cors from "cors"
 import BlogRoutes from './Routes/Blog.Routes';
 import MarketRoutes from './Routes/Market.Routes';
 import DataRoutes from './Routes/Data.Routes';
+import DonationRoutes from './Routes/Donation.Routes';
 
 
 
@@ -30,6 +31,8 @@ AppDataSource.initialize().then(async () => {
     app.use(BlogRoutes)
     app.use(MarketRoutes)
     app.use(DataRoutes)
+    app.use(DonationRoutes)
+
 
     // start express server
     app.listen(3000)
