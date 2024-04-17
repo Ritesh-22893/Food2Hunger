@@ -27,9 +27,7 @@ function RegisterForms() {
         document: Yup.mixed().required('Document is required')
     });
 const navigate= useNavigate()
-const navigation = ()=>{
-    navigate('/Ngologinform')
-}
+
     return (
         <div className="flex-col justify-center items-center h-screen bg-white-100 pt-20 space-y-3">
                 <h1 className='font-bold text-3xl text-center mb-4'>WELCOME TO FOOD2HUNGER</h1>
@@ -52,6 +50,8 @@ const navigation = ()=>{
                         data.append("document",values.document)
                         axios.post('http://localhost:3000/Data',data).then(res=>{
                             console.log(res);
+                    navigate('/Ngologinform')
+                            
                         }).catch(err=>{
                             console.log(err);
                         })
@@ -110,9 +110,7 @@ const navigation = ()=>{
                             </div>
                             
                             <div className=" pl-32   flex items-center justify-between i">
-                                <button type="submit"  className="w-80 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  onClick={()=>{
-                                    navigation()
-                                }}>
+                                <button type="submit"  className="w-80 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                 Sign up</button>
                             </div>
 </Form>

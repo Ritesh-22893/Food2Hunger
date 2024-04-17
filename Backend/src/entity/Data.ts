@@ -25,4 +25,7 @@ export class Data{
 
     @Column({nullable:true})
     document:string
+
+    @Column({default:'admin'})
+    role:string
 }

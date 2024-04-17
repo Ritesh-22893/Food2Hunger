@@ -2,14 +2,17 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import Footer from "../../Navigation/Footer";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LoginFormSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("can't be empty"),
   password: Yup.string().required("can't be empty"),
 });
-
-const NgoLoginForm = () => (
-  <div className="flex flex-col h-screen w-screen bg-white fixed">
+const NgoLoginForm = () => {
+  const navigate=useNavigate()
+  return(
+    <div className="flex flex-col h-screen w-screen bg-white fixed">
     <div className="flex-grow flex items-center justify-center mb-10">
       <div
         className="min-h-full min-w-full  p-8 rounded-lg shadow-lg max-w-screen-md mx-auto flex flex-grow gap-32 items-center
@@ -36,6 +39,17 @@ const NgoLoginForm = () => (
             validationSchema={LoginFormSchema}
             onSubmit={(values) => {
               console.log(values);
+             try {
+              axios.post('http://localhost:3000/login',values).then(res=>{
+                console.log(res);
+                localStorage.setItem('token',res.data.token)
+                navigate('/Dashboard')
+              }).catch(error=>{
+                console.log(error);
+              })
+             } catch (error) {
+              console.log(error);
+             }
             }}
           >
             {({ errors, touched }) => (
@@ -124,5 +138,6 @@ const NgoLoginForm = () => (
       </div>
     </div>
   </div>
-);
+  )
+}
 export default NgoLoginForm;
