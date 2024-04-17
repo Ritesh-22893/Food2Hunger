@@ -16,7 +16,7 @@ function Dashboard() {
         <br/>
         <div>
             <ul className='first_block_list'>
-                <li className='py-4 text-lg px-24'>Dashboard</li>
+                <li className='py-4 text-lg px-24 font-semibold'>Dashboard</li>
                < hr class="h-px  bg-gray-200 border-0 dark:bg-gray-700 w-96"/>
                 <li className='py-4 text-lg px-16'>Blog Managament</li>
                 < hr class="h-px  bg-gray-200 border-0 dark:bg-gray-700 w-96"/>
