@@ -24,6 +24,7 @@ export const getDataMarket=async(req:Request, res:Response, next:NextFunction)=>
 
 export const postDataMarket=async(req:Request, res:Response, next:NextFunction)=>{
     try {
+        req.body.image=req.file.filename
         await MarketRepo.save(req.body).then(result=>{
             res.status(200).json({
                 message:"data post",
