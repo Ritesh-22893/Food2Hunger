@@ -58,6 +58,7 @@ function Dashboard_Blog() {
 
             </div>
             <button onClick={()=>{
+                console.log('sdf');
                     getdata()
             }}>Post</button>
         </div>
