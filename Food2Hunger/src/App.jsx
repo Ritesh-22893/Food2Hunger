@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import React from 'react'
 import Navbar from './Components/Navigation/Navbar'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Blog from './Pages/Blog'
-import Marketplace from './Pages/Marketplace'
+import Marketplace from "./Pages/Marketplace"
 import ContactUs from './Pages/ContactUs'
 
 function App() {
