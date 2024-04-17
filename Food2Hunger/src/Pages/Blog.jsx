@@ -12,7 +12,7 @@ function Blog() {
             >
               Welcome to
               <div className="text-orange-600 font-extrabold uppercase">
-                Blog page of food2hungry
+                Blog page of food2hunger
               </div>
             </div>
             <div
@@ -42,7 +42,7 @@ function Blog() {
           </div>
           <div className="w-2/5 float-right" id="left_halfpartofscreen">
             <img
-              className="mt-16 w-screen h-[500px] rounded-full border-8 border-orange-400"
+              className="mt-16 w-screen h-[500px] rounded-full border-8 border-orange-500"
               src="..\public\images\photo-1488521787991-ed7bbaae773c.avif"
               alt=""
             />
@@ -86,19 +86,19 @@ function Blog() {
               </div>
               <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                  Before they sold out
+                  Donating food to shopkeeper
                   <br class="hidden lg:inline-block" />
-                  readymade gluten
+                  whose lifestyle was deteriorating
                 </h1>
                 <p class="mb-8 leading-relaxed">
-                  Copper mug try-hard pitchfork pour-over freegan heirloom
-                  neutra air plant cold-pressed tacos poke beard tote bag.
-                  Heirloom echo park mlkshk tote bag selvage hot chicken
-                  authentic tumeric truffaut hexagon try-hard chambray.
+                  Shopkeeper with deteriorating life was provided support with
+                  foods to improve his lifestyle and improve his daily life,
+                  making him to survive with sort of ease. Authentic tumeric
+                  truffaut hexagon try-hard chambray...
                 </p>
                 <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-xl text-lg">
-                    Read More...
+                  <button class="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-xl text-lg">
+                    Read More
                   </button>
                 </div>
               </div>
@@ -111,19 +111,20 @@ function Blog() {
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
               <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                  Before they sold out
+                  Members of NGO providing
                   <br class="hidden lg:inline-block" />
-                  readymade gluten
+                  homemade goods to banke district
                 </h1>
                 <p class="mb-8 leading-relaxed">
-                  Copper mug try-hard pitchfork pour-over freegan heirloom
-                  neutra air plant cold-pressed tacos poke beard tote bag.
-                  Heirloom echo park mlkshk tote bag selvage hot chicken
-                  authentic tumeric truffaut hexagon try-hard chambray.
+                  Helping a community donating tons of foods in banke district.
+                  Making the lives of people better and ease which will
+                  ultimately lead in better living. Uplifting the lives of
+                  thousands and showing a beautiful message to the whole
+                  world...
                 </p>
                 <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded-xl text-lg">
-                    Read More...
+                  <button class="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded-xl text-lg">
+                    Read More
                   </button>
                 </div>
               </div>
@@ -151,19 +152,19 @@ function Blog() {
                 </div>
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                   <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                    Before they sold out
+                    Giving healthy snacks
                     <br class="hidden lg:inline-block" />
-                    readymade gluten
+                    to society members in hot day
                   </h1>
                   <p class="mb-8 leading-relaxed">
-                    Copper mug try-hard pitchfork pour-over freegan heirloom
-                    neutra air plant cold-pressed tacos poke beard tote bag.
-                    Heirloom echo park mlkshk tote bag selvage hot chicken
-                    authentic tumeric truffaut hexagon try-hard chambray.
+                    Watch how NGO is providing healthy snacks to the people of
+                    nearby locality making their day better in summer season.
+                    With help of collaborating skill many ocals were getting
+                    facilities that they were hoping with programs nearby...
                   </p>
                   <div class="flex justify-center">
-                    <button class="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-xl text-lg">
-                      Read More...
+                    <button class="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-xl text-lg">
+                      Read More
                     </button>
                   </div>
                 </div>
