@@ -1,6 +1,6 @@
 import React from "react";
 
-const Handcraftsarray = ({ products }) => {
+const Handcraftarray = ({ products }) => {
   return (
     <div className="grid grid-cols-3 gap-4 px-20 w-screen">
       {products.map((product) => (
@@ -25,4 +25,4 @@ const Handcraftsarray = ({ products }) => {
   );
 };
 
-export default Handcraftsarray;
+export default Handcraftarray;
