@@ -68,7 +68,7 @@ function Dashboard_Blog() {
         <div className='bg-white drop-shadow-lg flex flex-col pb-5 items-center gap-2'>
                 <div><img src="./images/bg1.jpg" alt="bg" className='w-full h-20' /></div>
                 <div className='font-bold text-xl '>Title</div>
-                <div className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt enim numquam voluptates mollitia totam non est debitis delectus nostrum error, nemo labore repellendus consequatur necessitatibus excepturi rerum quis vel!</div>
+                <div className='text-center'>Loremadsfa ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt enim numquam voluptates mollitia totam non est debitis delectus nostrum error, nemo labore repellendus consequatur necessitatibus excepturi rerum quis vel!</div>
              </div>
         </div>
       </div>
