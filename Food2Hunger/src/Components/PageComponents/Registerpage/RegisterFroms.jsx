@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function RegisterForms() {
     const initialValues = {
@@ -10,7 +11,7 @@ function RegisterForms() {
         phone: '',
         email: '',
         password: '',
-        // confirm_password: '',
+        confirm_password: '',
         document: ''
     };
 
@@ -20,12 +21,15 @@ function RegisterForms() {
         phone: Yup.string().required('Phone number is required'),
         email: Yup.string().email('Invalid email').required('Email is required'),
         password: Yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
-        // confirm_password: Yup.string()
-        //     .oneOf([Yup.ref('password'), null], 'Passwords must match')
-        //     .required('Confirm password is required'),
-        // document: Yup.mixed().required('Document is required')
+        confirm_password: Yup.string()
+            .oneOf([Yup.ref('password'), null], 'Passwords must match')
+            .required('Confirm password is required'),
+        document: Yup.mixed().required('Document is required')
     });
-
+const navigate= useNavigate()
+const navigation = ()=>{
+    navigate('/Ngologinform')
+}
     return (
         <div className="flex-col justify-center items-center h-screen bg-white-100 pt-20 space-y-3">
                 <h1 className='font-bold text-3xl text-center mb-4'>WELCOME TO FOOD2HUNGER</h1>
@@ -46,7 +50,6 @@ function RegisterForms() {
                         data.append("email",values.email)
                         data.append("password",values.password)
                         data.append("document",values.document)
-
                         axios.post('http://localhost:3000/Data',data).then(res=>{
                             console.log(res);
                         }).catch(err=>{
@@ -107,7 +110,9 @@ function RegisterForms() {
                             </div>
                             
                             <div className=" pl-32   flex items-center justify-between i">
-                                <button type="submit"  className="w-80 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" >
+                                <button type="submit"  className="w-80 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  onClick={()=>{
+                                    navigation()
+                                }}>
                                 Sign up</button>
                             </div>
 </Form>
