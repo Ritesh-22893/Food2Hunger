@@ -9,10 +9,12 @@ import NgoLoginForm from './Components/PageComponents/NgoLoginPage/Ngologinform'
 import Footer from './Components/Navigation/Footer'
 import RegisterForms from './Components/PageComponents/Registerpage/RegisterFroms'
 
+
 function App() {
   return (
     <>
-   
+
+  
 
      <Router>
      <Navbar/>
