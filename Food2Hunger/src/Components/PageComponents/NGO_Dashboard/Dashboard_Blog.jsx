@@ -1,10 +1,23 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 function Dashboard_Blog() {
     const [image, setImage]=useState('');
     const [title, setTitle]=useState('');
     const [description, setDescription]=useState('');
+    const [data,setData]=useState([])
+    const fetchdata=()=>{
+      try {
+        axios.get("http://localhost:3000/Blog").then(res=>{
+            console.log(res)
+            setData([...res.data.data])
+        }).catch(err=>[
+            console.log(err)
+        ])
+      } catch (error) {
+        console.log(error);
+      }
+    }
     const getdata=()=>{
         try {
             const data = new FormData();
@@ -20,10 +33,13 @@ function Dashboard_Blog() {
             console.log(error);
         }
     }
+    useEffect(() => {
+        fetchdata()
+      }, []);
   return (
     <div>
       <div>
-      <div className='post_blog flex flex-col items-center justify-center  ' >
+      <div className='flex flex-col items-center justify-center  ' >
             <div>
                 <h1 className='text-xl mt-6 font-bold '>Post Blog</h1>
             </div>
@@ -66,11 +82,20 @@ function Dashboard_Blog() {
       <div className='mt-10'>
         <div className='text-3xl font-bold text-center mb-10'>Blogs</div>
         <div className='flex gap-10 px-10'>
-        <div className='bg-white drop-shadow-lg flex flex-col pb-5 items-center gap-2'>
-                <div><img src="./images/bg1.jpg" alt="bg" className='w-full h-20' /></div>
-                <div className='font-bold text-xl '>Title</div>
-                <div className='text-center'>Loremadsfa ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt enim numquam voluptates mollitia totam non est debitis delectus nostrum error, nemo labore repellendus consequatur necessitatibus excepturi rerum quis vel!</div>
+        {
+            data.map((val,i)=>{
+                    let image=`http://localhost:3000/public/${val.image}`
+                    return(
+                        <>
+                    <div className='bg-white drop-shadow-lg flex flex-col pb-5 items-center gap-2'>
+                <div><img src={image} alt="bg" className='w-full h-20' /></div>
+                <div className='font-bold text-xl '>{val.title}</div>
+                <div className='text-center'>{val.description}</div>
              </div>
+                        </>
+                    )
+                })
+            }
         </div>
       </div>
     </div>

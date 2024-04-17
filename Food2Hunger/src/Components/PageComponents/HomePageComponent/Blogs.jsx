@@ -22,7 +22,7 @@ function Blogs() {
     <div className='mt-20'>
  <div className='text-center text-3xl font-bold mb-10'>Blogs</div>
 
-   <div className='flex gap-10 px-10 '>
+   <div className='grid grid-cols-3 w-10/12  mx-auto gap-10 '>
      {
          data.map((val,i)=>{
           let image=`http://localhost:3000/public/${val.image}`
@@ -31,7 +31,7 @@ function Blogs() {
                  <img src={image} alt="bg" className=' h-56 w-full rounded-md' />
                  <div className='font-bold text-xl'>{val.title}</div>
                  <div className='text-center'>{val.description}</div>
-                 <div className='bg-[#F74B1B] text-white px-7 py-1 rounded-full'>{val.btn}</div>
+                 <div className='bg-[#F74B1B] text-white px-7 py-1 rounded-full'>See More</div>
                  </div>
              );
          })

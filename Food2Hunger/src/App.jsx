@@ -15,15 +15,16 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar/>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Blog" element={<Blog />}></Route>
-          <Route path="/Marketplace" element={<Marketplace />}></Route>
-          <Route path="/Contactus" element={<ContactUs />}></Route>
-          <Route path="/Ngologinform" element={<NgoLoginForm />}></Route>
-          <Route path="/Registerform" element={<RegisterForms />}></Route>
-          <Route path="/Donatepage" element={<FoodForm/>}></Route>
+          <Route path="/" element={<Navbar/>}>
+          <Route index element={<Home />}></Route>
+          <Route path="Blog" element={<Blog />}></Route>
+          <Route path="Marketplace" element={<Marketplace />}></Route>
+          <Route path="Contactus" element={<ContactUs />}></Route>
+          <Route path="Ngologinform" element={<NgoLoginForm />}></Route>
+          <Route path="Registerform" element={<RegisterForms />}></Route>
+          <Route path="Donatepage" element={<FoodForm/>}></Route>
+          </Route>
           <Route path="/Dashboard" element={<ProtectedRoutes/>}>
           <Route index  element={<NewDashboard/>}/>
 

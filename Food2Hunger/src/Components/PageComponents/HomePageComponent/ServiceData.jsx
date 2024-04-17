@@ -1,7 +1,7 @@
 export const ServiceData=[
     {
         img:'./images/marketplace.png',
-        title:'Food Pickup',
+        title:'Marketplace',
         description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quisquam blanditiis sequi, repudiandae repellendus ipsum magni pariatur'
     },
     {
@@ -11,7 +11,7 @@ export const ServiceData=[
     },
      {
         img:'./images/connection.jpg',
-        title:'Food delivery',
+        title:'Connection',
         description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quisquam blanditiis sequi, repudiandae repellendus ipsum magni pariatur'
     }
 

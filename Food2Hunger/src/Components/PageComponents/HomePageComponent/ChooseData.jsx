@@ -1,7 +1,7 @@
 export const ChooseSection=[
     {
         img:'./images/org.jpeg',
-        title:'Trusted Organization',
+        title:'Social Work',
         description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quisquam blanditiis sequi, repudiandae repellendus ipsum magni pariatur'
     },
     {
@@ -11,7 +11,7 @@ export const ChooseSection=[
     },
      {
         img:'./images/org.jpeg',
-        title:'Trusted Organization',
+        title:'Quality',
         description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quisquam blanditiis sequi, repudiandae repellendus ipsum magni pariatur'
     }
 
