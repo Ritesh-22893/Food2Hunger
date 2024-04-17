@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavData } from "./NavData";
 import { Link, useNavigate } from "react-router-dom";
 import NgoLoginForm from "../PageComponents/NgoLoginPage/Ngologinform";
+import Dashboard from "../PageComponents/NGO_Dashboard/Dashboard";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -11,6 +12,12 @@ function Navbar() {
   const Navigation2 = () => {
     navigate('/Registerform');
   };
+  const [token, setToken]=useState(false)
+  useEffect(() => {
+   if(localStorage.getItem('token')){
+    setToken(true)
+   }
+  }, [localStorage]);
   return (
       <div className="flex justify-between bg-black/80 px-10 py-3 items-center">
         <div className="text-3xl drop-shadow-md font-bold text-white">
@@ -24,6 +31,7 @@ function Navbar() {
               </div>
             );
           })}
+          {token && <Link to='/Dashboard'>Dashboard</Link>}
         </div>
         <div className="flex gap-3 items-center">
           <button
