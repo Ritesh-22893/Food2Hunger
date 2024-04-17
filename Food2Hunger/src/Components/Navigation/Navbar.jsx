@@ -8,6 +8,9 @@ function Navbar() {
   const Navigation = () => {
     navigate(`/Ngologinform`);
   };
+  const Navigation2 = () => {
+    navigate('/Registerform');
+  };
   return (
       <div className="flex justify-between bg-black/80 px-10 py-3 items-center">
         <div className="text-3xl drop-shadow-md font-bold text-white">
@@ -32,7 +35,9 @@ function Navbar() {
             Log In
           </button>
 
-          <button className="bg-[#188E4F] text-white px-7 py-1 rounded-full">
+          <button className="bg-[#188E4F] text-white px-7 py-1 rounded-full" onClick={()=>{
+            Navigation2();
+          }}>
             Sign Up
           </button>
         </div>
