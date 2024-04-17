@@ -19,7 +19,7 @@ const Handcraftarray = ({ products }) => {
           <button className="text-md w-28 mt-2 pr-5 py-2 ml-28 font-semibold  bg-blue-500 text-white rounded-3xl hover:bg-blue-600 flex justify-end text-center content-end">
             Buy Now
           </button>
-        </div>
+        </div>  
       ))}
     </div>
   );

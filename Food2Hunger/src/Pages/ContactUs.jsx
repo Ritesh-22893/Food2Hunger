@@ -104,10 +104,6 @@ function ContactUs() {
             </div>
             {/* for anchor tag */}
 
-            {/* <div className='h-14 w-96
-bg-blue-600 text-white px-44 py-4'>
-<a href="#">Send Message</a>
-</div> */}
           </div>
         </div>
       </div>
