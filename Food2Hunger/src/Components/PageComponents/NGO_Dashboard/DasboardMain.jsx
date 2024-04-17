@@ -2,7 +2,7 @@ import React from 'react';
 
 function DasboardMain() {
   return (
-      <div className='w-full bg-red-200'>
+      <div className='w-full '>
         <div className='grid grid-cols-3 gap-10'>
                 <div className='  bg-blue-300 p-10  shadow-2xl rounded-3xl border-2-black'>
                     <div className='p-4'>
@@ -27,8 +27,8 @@ function DasboardMain() {
                 </div>
         </div>
         {/* donation request */}
-        <div className='mt-10 flex gap-20 px-10 items-center'>
-            <div className='flex flex-col gap-5'>
+        <div className='mt-10 grid grid-cols-2  gap-20 px-10 items-center'>
+            <div className=''>
                 <div className='text-xl font-bold'>Donation Requests</div>
                 <div className='bg-white drop-shadow-lg flex justify-between p-5'>
                     <div><img src="" alt="" srcset="" /></div>
@@ -53,7 +53,7 @@ function DasboardMain() {
             </div>
         </div>
 
-        <div className='mt-10 flex gap-20 px-10 items-center '>
+        <div className='mt-10 grid grid-cols-2 gap-20 px-10 items-center '>
             <div className='flex flex-col gap-5'>
                 <div className='text-xl font-bold'>Delivery Pending</div>
                 <div className='bg-white drop-shadow-lg flex justify-between p-5'>
