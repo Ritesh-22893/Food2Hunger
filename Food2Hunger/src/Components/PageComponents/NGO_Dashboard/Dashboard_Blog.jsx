@@ -82,7 +82,7 @@ function Dashboard_Blog() {
         </div>
       <div className='mt-10'>
         <div className='text-3xl font-bold text-center mb-10'>Blogs</div>
-        <div className='grid grid-cols-3 mx-auto w-full'>
+        <div className='grid grid-cols-3 mx-auto w-full gap-10'>
         {
             data.map((val,i)=>{
                     let image=`http://localhost:3000/public/${val.image}`

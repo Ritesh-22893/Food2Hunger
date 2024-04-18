@@ -30,7 +30,7 @@ function Blogs() {
                  <div className='flex flex-col items-center gap-3 bg-white rounded-md p-5 drop-shadow-xl'>
                  <img src={image} alt="bg" className=' h-56 w-full rounded-md' />
                  <div className='font-bold text-xl'>{val.title}</div>
-                 <div className='text-center'>{val.description}</div>
+                 <div className='text-center overflow-auto'>{val.description}</div>
                  <div className='bg-[#F74B1B] text-white px-7 py-1 rounded-full'>See More</div>
                  </div>
              );

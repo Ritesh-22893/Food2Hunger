@@ -23,7 +23,7 @@ function MarketDashboard() {
             const data = new FormData();
             data.append("image",image)
             data.append("title",title)
-            data.append("Price",price)
+            data.append("price",price)
             data.append("description",description)
             axios.post('http://localhost:3000/Market',data).then(res=>[
                 console.log(res)
