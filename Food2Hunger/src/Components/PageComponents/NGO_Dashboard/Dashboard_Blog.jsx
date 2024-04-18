@@ -57,7 +57,7 @@ function Dashboard_Blog() {
                 ]}  type="file" name="" id="image" className='hidden' />
 
         </div>
-        <div className='title&Desc flex justify-center  gap-12 mt-4 '>
+        <div className='title&Desc flex items-center justify-center  gap-12 mt-4 '>
             <div className='flex flex-col gap-1'>
                 <h1 className='font-bold capitalize text-lg'>tittle</h1>
                 <input onChange={(e)=>{
@@ -76,19 +76,20 @@ function Dashboard_Blog() {
             <button onClick={()=>{
                 console.log('sdf');
                     getdata()
-            }}>Post</button>
-        </div>
+            }} className='bg-[#F74B1B] text-white px-7 py-1 mt-5 rounded-full flex items-center justify-center'>Post</button>
       </div>
+
+        </div>
       <div className='mt-10'>
         <div className='text-3xl font-bold text-center mb-10'>Blogs</div>
-        <div className='flex gap-10 px-10'>
+        <div className='grid grid-cols-3 mx-auto w-full'>
         {
             data.map((val,i)=>{
                     let image=`http://localhost:3000/public/${val.image}`
                     return(
                         <>
                     <div className='bg-white drop-shadow-lg flex flex-col pb-5 items-center gap-2'>
-                <div><img src={image} alt="bg" className='w-full h-20' /></div>
+                <div><img src={image} alt="bg" className='w-fit' /></div>
                 <div className='font-bold text-xl '>{val.title}</div>
                 <div className='text-center'>{val.description}</div>
              </div>

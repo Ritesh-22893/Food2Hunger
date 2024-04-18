@@ -43,21 +43,21 @@ function DasboardMain() {
                 <div className='  bg-blue-300 p-5 shadow-2xl rounded-3xl border-2-black'>
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
-                        <div className='font-bold mt-3'>Request completed </div>
+                        <div className='font-bold text-xl mt-3'>Request completed </div>
                         <div>20</div>
                     </div>
                 </div>
                 <div className='  bg-green-300 p-5 shadow-xl rounded-3xl border-2 ' >
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
-                        <div className='font-bold mt-3 capitalize'>pending required </div>
+                        <div className='font-bold mt-3 text-xl capitalize'>pending required </div>
                         <div>13</div>
                     </div>
                 </div>
                 <div className='bg-purple-300 p-5 shadow-xl rounded-3xl border-2 ' >
                     <div className='p-4'>
                         <img className='h-14 w-14 rounded-full bg-white  ' src="/public/images/noun-clipboard-202115.png"/>
-                        <div className='font-bold mt-3 capitalize'>delivery completed </div>
+                        <div className='font-bold mt-3 capitalize text-xl'>delivery completed </div>
                         <div>10</div>
                     </div>
                 </div>

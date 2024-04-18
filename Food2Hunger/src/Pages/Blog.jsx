@@ -4,50 +4,17 @@ function Blog() {
   return (
     <>
       <div className="mainscreen">
-        <div className=" w-full h-full flex-row " id="firstsection">
-          <div className="leftpartofscreen">
-            <div
-              id="first line of text"
-              className="text-[32px] font-semibold absolute top-28 left-16 gap-4 flex-col tracking-wider"
-            >
-              Welcome to
-              <div className="text-orange-600 font-extrabold uppercase">
-                Blog page of food2hunger
-              </div>
-            </div>
-            <div
-              id="second 3 lines of text"
-              className="mt-12 absolute top-48 left-16 text-xl tracking-wide flex flex-col gap-1 "
-            >
-              Here, we present you amazing post and various achievements of
-              NGOs.
-              <div className="flex-col mt-6 ">
-                Enjoy the beautiful memories
-                <div className="text-orange-500 font-sans font-bold">Gui</div>
-              </div>
-              Click the button below to view
-            </div>
-            <div
-              id="for buttons"
-              className="absolute top-[400px] left-16 flex gap-6"
-            >
-              <button className="mt-10 text-[20px] font-semibold tracking-wide h-16 w-60 rounded-full text-white bg-orange-500 hover:scale-110">
-                Read More...
-              </button>
-
-              <button className="mt-10 text-[20px] font-semibold tracking-wide h-16 w-60 rounded-full text-orange-400 bg-gray-200 hover:scale-110 ease-in-out">
-                View Acheivements
-              </button>
-            </div>
-          </div>
-          <div className="w-2/5 float-right" id="left_halfpartofscreen">
-            <img
-              className="mt-16 w-screen h-[500px] rounded-full border-8 border-orange-500"
-              src="..\public\images\photo-1488521787991-ed7bbaae773c.avif"
-              alt=""
-            />
-          </div>
+      <div classameName=" relative w-screen">
+    <img src="./images/blogback.webp" alt="bg" className="  h-600 w-full" />
+    <div className="absolute top-10 flex flex-col items-center w-full h-full gap-5 justify-center">
+        <div className="raleway font-extrabold text-2xl text-green-500">Our Blog</div>
+        <div className="raleway text-5xl font-extrabold text-center">Resources For Students &<br/>creatives to learn ,develop & grow.</div>
+        <div className="flex gap-5">
+            <button className="border border-black p-4 rounded-full w-44 text-white raleway font-bold bg-black">Get Started</button>
+            <button className="border border-black p-4 rounded-full w-44 raleway font-bold">Take A Tour</button>
         </div>
+    </div>
+    </div>
 
         <div className="searchblog">
           <div className="mt-12 text-center bg-gray-100 h-72 w-screen flex flex-col gap-3">
