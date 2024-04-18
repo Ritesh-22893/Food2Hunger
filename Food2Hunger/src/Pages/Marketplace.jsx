@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Handcraftarray from "../Components/PageComponents/Handcraftarray";
+import Footer from "../Components/Navigation/Footer";
 
 function Marketplace() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -119,7 +120,7 @@ function Marketplace() {
 
       {/* Display filtered products */}
       <Handcraftarray products={filteredProducts} />
-      
+    
     </div>
   );
 }

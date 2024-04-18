@@ -5,6 +5,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { MdCall } from "react-icons/md";
+import Footer from '../Components/Navigation/Footer';
+
 import { GrMail } from "react-icons/gr";
 function ContactUs() {
   return (
@@ -117,6 +119,7 @@ function ContactUs() {
           title="one"
         ></iframe>
       </div>
+      <Footer/>
     </>
 
     // footer is in app.js

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from '../Components/Navigation/Footer';
 
 function Blog() {
   return (
@@ -173,6 +174,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
