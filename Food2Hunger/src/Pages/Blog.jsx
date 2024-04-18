@@ -3,46 +3,6 @@ import React from "react";
 function Blog() {
   return (
     <>
-      <div className="mainscreen  ">
-        <div className=" w-full h-full  flex-row   " id="firstsection">
-          <div className="leftpartofscreen ">
-            <div
-              id="first line of text"
-              className="text-[32px] font-semibold absolute top-28 left-16 gap-4 flex-col tracking-wider "
-            >
-              <h1 className="font-bold text-5xl text-blue-500 pb-4 pt-16">Welcome to</h1>
-              <div className="text-black font-extrabold uppercase">
-                Blog page of food2hunger
-              </div>
-            </div>
-            <div
-              id="second 3 lines of text"
-              className="mt-12 absolute top-48 left-16 text-xl tracking-wide flex flex-col gap-1 "
-            >
-              <p className="text-3xl font-semibold capitalize pt-24">Here, we present <span className="text-green-600 font-bold  ">amazing post</span><br/>
-              <div className="flex py-10 gap-1"> and various <div className="text-orange-600 font-bold">achievements</div> of
-              NGOs.</div>
-              
-              </p>
-             
-               
-            </div>
-            <div
-              id="for buttons"
-              className="absolute top-[400px] left-16 flex gap-6"
-            >
-    
-            </div>
-          </div>
-          <div className="w-2/5 float-right" id="left_halfpartofscreen">
-            <img
-              className="mt-16 w-screen h-[500px] rounded-full border-8 border-green-500"
-              src="..\public\images\photo-1488521787991-ed7bbaae773c.avif"
-              alt=""
-            />
-          </div>
-        </div>
-
         <div className="searchblog">
           <div className="mt-12 text-center bg-gray-100 h-72 w-screen flex flex-col gap-3">
             <div className="pt-16 text-[34px] font-sans font-extrabold text-gray-600">

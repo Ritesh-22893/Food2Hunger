@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function DashboardSidebar({ setClick }) {
   // const[click, setClick]=useState('Dashboard');
   return (
-    <div className="flex flex-col items-center  gap-1 bg-white drop-shadow-lg py-20 h-full">
+    <div className="flex flex-col items-center  gap-1 bg-black/10 drop-shadow-lg py-20 h-full">
       <div className="flex flex-col gap-4 items-center mb-10">
         <div className="bg-[#F74B1B] h-28 w-28 text-white rounded-full  text-3xl font-bold  flex items-center justify-center">
           B
