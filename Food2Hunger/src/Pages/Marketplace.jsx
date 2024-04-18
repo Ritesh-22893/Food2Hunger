@@ -92,7 +92,7 @@ function Marketplace() {
   );
 
   return (
-    <div className="wholesite h-full flex-col fixed overflow-y-auto bg-white ">
+    <div className="wholesite h-full flex-col fixed overflow-y-auto bg-gray-200 ">
       <header>
         <h1 className="ml-20 text-3xl font-bold mt-5">
           Find <span className="text-orange-500">hand made crafts</span> and
@@ -103,15 +103,18 @@ function Marketplace() {
         <input
           type="text"
           placeholder="search here ..."
-          className="h-10 w-96 border-2 rounded-lg pl-4 outline-none"
+          className="h-10 w-96 bg border-2 rounded-lg pl-4 outline-none"
           value={searchQuery}
           onChange={handleSearchInputChange}
         />
+        <div className="pt-2">
         <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/009/652/218/small/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"
+          src="\public\images\search_8094123.png"
           alt=""
-          className="h-10 cursor-pointer"
+          className="h-7 w-7 cursor-pointer "
+          
         />
+        </div>
       </div>
 
       {/* Display filtered products */}

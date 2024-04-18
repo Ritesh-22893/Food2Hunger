@@ -3,19 +3,6 @@ import React from "react";
 function Blog() {
   return (
     <>
-      <div className="mainscreen">
-      <div classameName=" relative w-screen">
-    <img src="./images/blogback.webp" alt="bg" className="  h-600 w-full" />
-    <div className="absolute top-10 flex flex-col items-center w-full h-full gap-5 justify-center">
-        <div className="raleway font-extrabold text-2xl text-green-500">Our Blog</div>
-        <div className="raleway text-5xl font-extrabold text-center">Resources For Students &<br/>creatives to learn ,develop & grow.</div>
-        <div className="flex gap-5">
-            <button className="border border-black p-4 rounded-full w-44 text-white raleway font-bold bg-black">Get Started</button>
-            <button className="border border-black p-4 rounded-full w-44 raleway font-bold">Take A Tour</button>
-        </div>
-    </div>
-    </div>
-
         <div className="searchblog">
           <div className="mt-12 text-center bg-gray-100 h-72 w-screen flex flex-col gap-3">
             <div className="pt-16 text-[34px] font-sans font-extrabold text-gray-600">
